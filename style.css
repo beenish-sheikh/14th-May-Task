@@ -1,0 +1,103 @@
+*{
+    background-image: url("imgs/floral.png");
+}
+marquee{
+    background-color: red;
+    color:white;
+
+}
+.nav div{
+    display: flex;
+    justify-content: left;
+    padding: 30px;
+}
+.nav{
+    height: 70px;
+width: 100%;
+    display:flex;
+    background-color:black;
+    color:white;
+    position: sticky;
+    top:20px;
+    }
+
+.nav img{
+    
+    height: 30px;
+    padding-right: 800px;
+    
+}
+section{
+    margin: 0px;
+    padding: 0px;
+
+}
+
+.join{
+   height:300px;
+    display: row;
+    color: black;
+    background-color: pink;
+    text-align: center;
+    padding:30px;
+
+}
+
+.join button{
+    color:pink;
+    background-color: black;
+    padding: 20px 60px;
+    font-size: 30px;
+}
+.join button:hover{
+background-color: red;
+}
+.services{
+    background-color: lightgray;
+    color:black;
+    display: flex;
+    flex-direction: row;
+    padding: 150px;
+    justify-content: center;
+}
+.portfolio{
+    
+    color:black;
+    text-align: center;
+    background-color: burlywood;
+    
+}
+.portfolio img{
+    width: 300px;
+    height: 200px;
+    margin: 2em;
+    border:1px ;
+    border: redius 1px;
+}
+
+.contect{
+display: flex;
+justify-content: center;
+padding: 1em;
+background-color: lightblue;
+}
+.contect button{
+    padding: 20px;
+    margin:20px;
+    font-size:30px;
+    border:1px solid black;
+    border-radius:60px;
+}
+footer{
+    background-color: black;
+    padding:1em;
+    text-align: center;
+    color:white;
+}
+footer:hover i{
+    color:red;
+}
+button:hover{
+    color:white;
+    background-color:black;
+}
