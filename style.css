@@ -1,103 +1,178 @@
-*{
-    background-image: url("imgs/floral.png");
-}
-marquee{
+marquee {
     background-color: red;
-    color:white;
-
+    color: white;
 }
-.nav div{
+
+.nav div {
     display: flex;
     justify-content: left;
     padding: 30px;
 }
-.nav{
-    height: 70px;
-width: 100%;
-    display:flex;
-    background-color:black;
-    color:white;
-    position: sticky;
-    top:20px;
-    }
 
-.nav img{
-    
-    height: 30px;
-    padding-right: 800px;
-    
+.nav {
+    height: 70px;
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+    background-color: black;
+    color: white;
+    position: sticky;
+    top: 20px;
 }
-section{
+
+nav ul li {
+    list-style: none;
+    padding: 10px;
+}
+
+nav ul {
+    display: flex;
+}
+
+.nav img {
+    height: 47px;
+    margin: 10px;
+}
+
+section {
     margin: 0px;
     padding: 0px;
-
 }
 
-.join{
-   height:300px;
+.join {
+    height: 300px;
     display: row;
-    color: black;
     background-color: pink;
+    background-image: url("imgs/floral.png");
     text-align: center;
-    padding:30px;
-
+    padding: 30px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
 }
 
-.join button{
-    color:pink;
+.join p{
+    border-top: 1px solid black;
+    border-bottom: 1px solid black;
+    width: 700px;
+    padding: 15px;
+    font-size: 20px;
+}
+
+.join button {
+    color: pink;
     background-color: black;
     padding: 20px 60px;
     font-size: 30px;
 }
-.join button:hover{
-background-color: red;
-}
-.services{
-    background-color: lightgray;
-    color:black;
-    display: flex;
-    flex-direction: row;
-    padding: 150px;
-    justify-content: center;
-}
-.portfolio{
-    
-    color:black;
-    text-align: center;
-    background-color: burlywood;
-    
-}
-.portfolio img{
-    width: 300px;
-    height: 200px;
-    margin: 2em;
-    border:1px ;
-    border: redius 1px;
+
+.join button:hover {
+    background-color: red;
 }
 
-.contect{
-display: flex;
-justify-content: center;
-padding: 1em;
-background-color: lightblue;
+.services {
+    background-color: lightgray;
+    background-image: url("imgs/floral.png");
+    display: flex;
+    flex-direction: column;
+    padding: 50px;
 }
-.contect button{
-    padding: 20px;
-    margin:20px;
-    font-size:30px;
-    border:1px solid black;
-    border-radius:60px;
-}
-footer{
-    background-color: black;
-    padding:1em;
+
+.course {
+    display: flex;
     text-align: center;
-    color:white;
 }
-footer:hover i{
-    color:red;
+
+.course i {
+    font-size: 80px;
 }
-button:hover{
-    color:white;
-    background-color:black;
+
+.services h1 {
+    text-align: center;
 }
+
+.portfolio {
+    text-align: center;
+    background-color: burlywood;
+    background-image: url("imgs/floral.png");
+    padding: 20px;
+}
+
+.portfolio img {
+    width: 220px;
+    height: 150px;
+    margin: 10px;
+    border-radius: 15px;
+}
+
+.portfolio figure{
+    display: grid;
+    grid-template-columns: auto auto auto;
+}
+.contect {
+    display: flex;
+    justify-content: center;
+    padding: 1em;
+    background-color: lightblue;
+    background-image: url("imgs/floral.png")
+}
+
+.contect button {
+    padding: 20px;
+    margin: 20px;
+    font-size: 30px;
+    border: 1px solid black;
+    border-radius: 60px;
+}
+
+footer {
+    background-color: black;
+    padding: 1em;
+    text-align: center;
+    color: white;
+}
+
+footer:hover i {
+    color: red;
+}
+
+button:hover {
+    color: white;
+    background-color: black;
+}
+@media only screen and (max-width: 800px) {
+
+    body{
+        width:100%;
+    }
+    .course{
+        display: flex;
+        flex-direction: column;
+    }
+
+    .portfolio figure{
+            display: grid;
+            grid-template-columns: auto auto;
+            justify-content: center;
+
+    }
+    .join p{
+        border-top: 1px solid black;
+        border-bottom: 1px solid black;
+        width: 90%;
+        padding: 15px;
+        font-size: 20px;
+    }
+  .portfolio img {
+    width: 180px;
+    height: 110px;
+    margin: 10px;
+    border-radius: 15px;
+}  
+@media only screen and (max-width: 380px) {
+    .portfolio figure{
+        display: flex;
+        flex-direction: column;
+}
+}
+
